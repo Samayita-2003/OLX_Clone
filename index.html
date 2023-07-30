@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="index.css">
+    <title>OLX Clone</title>
+</head>
+<body>
+
+   <!--============================================== * navbar * ==============================================-->
+     
+    <div class="header">
+        <div class="navbar">
+            <img src="Pictures/olx_logo.png">
+
+            <div class="country_select" id="country">
+
+                <div class="select">
+                    <p id="text"> Select your country </p>
+                    <i class="fa-solid fa-chevron-down" id="moving"></i>
+                </div>
+
+                <ul class="option_box" id="list">
+
+                    <li class="option" onclick="myFunction('USA')">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p>USA</p>
+                    </li>
+                    <li class="option" onclick="myFunction('Canada')">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p>Canada</p>
+                    </li>
+                    <li class="option" onclick="myFunction('India')">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p>India</p>
+                    </li>
+                    <li class="option" onclick="myFunction('France')">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p>France</p>
+                    </li>
+                    <li class="option" onclick="myFunction('Japan')">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p>Japan</p>
+                    </li>
+                    <li class="option" onclick="myFunction('South Korea')">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p>South Korea</p>
+                    </li>
+        
+                </ul>
+    
+            </div>
+
+            <div class="search_box">
+                <input type="text" class="searchclass" id="searchid" placeholder="Find cars, mobile phones and more">
+                <p><i class="fa-solid fa-magnifying-glass"></i></p>
+            </div>
+
+            <div class="language">
+                <p id="eng_tag">English</p>
+
+                <ul class="hindi_english">
+                    <li onclick="languageolx('English')">English</li>
+                    <li onclick="languageolx('हिंदी')">हिंदी</li>
+                </ul>
+            </div>
+
+            <div class="message">
+                <i class="fa-regular fa-comment"></i>
+            </div>
+            
+            <div class="message">
+                <i class="fa-regular fa-bell"></i>
+            </div>
+
+            <div class="logo">
+                <div class="girl_img" id="girl_img_id">
+                    <img src="Pictures/pic3.jpg">
+                </div>
+
+                <div class="dropdown" id="dropdownid">
+                    <div class="nameandimg">
+                        <img src="Pictures/pic3.jpg">
+                        <p> Samayita Bepari</p>
+                    </div>
+
+                    <ul>
+                        <li>
+                            <i class="fa-regular fa-user"></i>
+                            <p> My Account</p>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-box"></i>
+                            <p> My Orders</p>
+                        </li>
+                        <hr>
+                        <li>
+                            <i class="fa-regular fa-question"></i>
+                            <p> Help</p>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-gear"></i>
+                            <p> Settings</p>
+                        </li>
+                        <hr>
+                        <li>
+                            <i class="fa-solid fa-arrow-right-to-bracket"></i>
+                            <p> Log Out</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+          
+            <div class="selling_page">
+                <button>
+                    <i class="fa-regular fa-plus"></i>
+                    <p>SELL</p>
+                </button>
+            </div>
+        </div>
+    </div>
+
+   <!--============================================== * ad 1 * ==============================================-->
+     
+    <div class="ad_img">
+        <img src="Pictures/Ad/ad1.jpg">
+        <i class="fa-regular fa-rectangle-xmark" id="ad_icon"></i>
+    </div>
+
+   <!--============================================== * product * ==============================================-->
+
+    <div class="product">
+        <div class="first_row">
+            <div class="box">
+                <a href="a"></a>
+                <img src="Pictures/Product/product-1.jpg">
+                <h2>₹3,500</h2>
+                <p>Mi TV Stick</p>
+                <div class="address_data">
+                    <p>Bandra East, Mumbai</p>
+                    <p>Today</p>
+                </div>
+            </div>
+            <div class="box">
+                <a href="a"></a>
+                <img src="Pictures/Product/product-2.jpg">
+                <h2>₹4,800</h2>
+                <p>XBox One s</p>
+                <div class="address_data">
+                    <p>Garia, Kolkata</p>
+                    <p>23 December, 2021</p>
+                </div>
+            </div>
+            <div class="box">
+                <a href="a"></a>
+                <img src="Pictures/Product/product-3.jpg">
+                <h2>₹12,600</h2>
+                <p>LG Fridge</p>
+                <div class="address_data">
+                    <p>Lajpat Nagar, Delhi</p>
+                    <p>11 February, 2023</p>
+                </div>
+            </div>
+            <div class="box">
+                <a href="a"></a>
+                <img src="Pictures/Product/product-4.jpg">
+                <h2>₹89,500</h2>
+                <p>Audi Car</p>
+                <div class="address_data">
+                    <p>Bandra East, Mumbai</p>
+                    <p>Today</p>
+                </div>
+            </div>
+        </div>    
+        
+        <div class="first_row">
+            <div class="box">
+                <a href="a"></a>
+                <img src="Pictures/Product/product-5.jpg">
+                <h2>₹7,500</h2>
+                <p>Denim-Pepe Jeans</p>
+                <div class="address_data">
+                    <p>Gurgaon, Haryana</p>
+                    <p>31 May,2022</p>
+                </div>
+            </div>
+            <div class="box">
+                <a href="a"></a>
+                <img src="Pictures/Product/product-6.jpg">
+                <h2>₹1098</h2>
+                <p>Carrom Board</p>
+                <div class="address_data">
+                    <p>Infocity, Bhubaneswar</p>
+                    <p>9 September 2021</p>
+                </div>
+            </div>
+            <div class="box">
+                <a href="a"></a>
+                <img src="Pictures/Product/product-7.jpg">
+                <h2>₹999</h2>
+                <p>Noise Earbuds</p>
+                <div class="address_data">
+                    <p>Coonoor, Karnataka</p>
+                    <p>7 July,2023</p>
+                </div>
+            </div>
+            <div class="box">
+                <a href="a"></a>
+                <img src="Pictures/Product/product-8.jpg">
+                <h2>₹62,500</h2>
+                <p>Nikkon Camera</p>
+                <div class="address_data">
+                    <p>Navi Mumbai</p>
+                    <p>Today</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="first_row">
+            <div class="box">
+                <a href="a"></a>
+                <img src="Pictures/Product/product-9.jpg">
+                <h2>₹3,200</h2>
+                <p>Addidas Men's Jacket</p>
+                <div class="address_data">
+                    <p>Patia, Bhubaneswar</p>
+                    <p>28 March 2020</p>
+                </div>
+            </div>
+            <div class="box">
+                <a href="a"></a>
+                <img src="Pictures/Product/product-10.jpg">
+                <h2>₹4,500</h2>
+                <p>Croma Washing Machine</p>
+                <div class="address_data">
+                    <p>DumDum, Kolkata</p>
+                    <p>25 December , 2021</p>
+                </div>
+            </div>
+            <div class="box">
+                <a href="a"></a>
+                <img src="Pictures/Product/product-11.jpg">
+                <h2>₹800</h2>
+                <p>Addidas Sandals</p>
+                <div class="address_data">
+                    <p>M.G.Road, Ahmedabad</p>
+                    <p>1 January, 2022</p>
+                </div>
+            </div>
+            <div class="box">
+                <a href="a"></a>
+                <img src="Pictures/Product/product-12.jpg">
+                <h2>₹1,500</h2>
+                <p>Godrej Interio Sofa</p>
+                <div class="address_data">
+                    <p>Saltlake, Kolkata</p>
+                    <p>15 October, 2020</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="first_row">
+            <div class="box">
+                <a href="a"></a>
+                <img src="Pictures/Product/product-13.jpg">
+                <h2>₹23,560</h2>
+                <p>Ford Car</p>
+                <div class="address_data">
+                    <p>Sarojini Nagar, Delhi</p>
+                    <p>1 August 2022</p>
+                </div>
+            </div>
+            <div class="box">
+                <a href="a"></a>
+                <img src="Pictures/Product/product-14.jpg">
+                <h2>₹3,450</h2>
+                <p>Custom Decor Dinning Table</p>
+                <div class="address_data">
+                    <p>Sailendra, Bhubaneswar</p>
+                    <p>16 May 2023</p>
+                </div>
+            </div>
+            <div class="box">
+                <a href="a"></a>
+                <img src="Pictures/Product/product-15.jpg">
+                <h2>₹1,100</h2>
+                <p>Sonata Wrist Watch</p>
+                <div class="address_data">
+                    <p>Chadni, Delhi</p>
+                    <p>29 November , 2021</p>
+                </div>
+            </div>
+            <div class="box">
+                <a href="a"></a>
+                <img src="Pictures/Product/product-16.jpg">
+                <h2>₹3,500</h2>
+                <p>Weights</p>
+                <div class="address_data">
+                    <p>R.K Puram , Chennai</p>
+                    <p>Today</p>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+   <!--============================================== * load more * ==============================================-->
+
+    <div class="load_more">
+        <button id="load_more_id"> Load More</button>
+
+        <div class="load_more_product" id="load_more_products_id">
+            <div class="product">
+                <div class="first_row">
+                    <div class="box">
+                        <a href="a"></a>
+                        <img src="Pictures/Product/product-1.jpg">
+                        <h2>₹3,500</h2>
+                        <p>Mi TV Stick</p>
+                        <div class="address_data">
+                            <p>Bandra East, Mumbai</p>
+                            <p>Today</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <a href="a"></a>
+                        <img src="Pictures/Product/product-2.jpg">
+                        <h2>₹4,800</h2>
+                        <p>XBox One s</p>
+                        <div class="address_data">
+                            <p>Garia, Kolkata</p>
+                            <p>23 December, 2021</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <a href="a"></a>
+                        <img src="Pictures/Product/product-3.jpg">
+                        <h2>₹12,600</h2>
+                        <p>LG Fridge</p>
+                        <div class="address_data">
+                            <p>Lajpat Nagar, Delhi</p>
+                            <p>11 February, 2023</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <a href="a"></a>
+                        <img src="Pictures/Product/product-4.jpg">
+                        <h2>₹89,500</h2>
+                        <p>Audi Car</p>
+                        <div class="address_data">
+                            <p>Bandra East, Mumbai</p>
+                            <p>Today</p>
+                        </div>
+                    </div>
+                </div>    
+                
+                <div class="first_row">
+                    <div class="box">
+                        <a href="a"></a>
+                        <img src="Pictures/Product/product-5.jpg">
+                        <h2>₹7,500</h2>
+                        <p>Denim-Pepe Jeans</p>
+                        <div class="address_data">
+                            <p>Gurgaon, Haryana</p>
+                            <p>31 May,2022</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <a href="a"></a>
+                        <img src="Pictures/Product/product-6.jpg">
+                        <h2>₹1098</h2>
+                        <p>Carrom Board</p>
+                        <div class="address_data">
+                            <p>Infocity, Bhubaneswar</p>
+                            <p>9 September 2021</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <a href="a"></a>
+                        <img src="Pictures/Product/product-7.jpg">
+                        <h2>₹999</h2>
+                        <p>Noise Earbuds</p>
+                        <div class="address_data">
+                            <p>Coonoor, Karnataka</p>
+                            <p>7 July,2023</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <a href="a"></a>
+                        <img src="Pictures/Product/product-8.jpg">
+                        <h2>₹62,500</h2>
+                        <p>Nikkon Camera</p>
+                        <div class="address_data">
+                            <p>Navi Mumbai</p>
+                            <p>Today</p>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+    
+        </div>
+
+    </div>
+
+    <!--============================================== * ad 2 * ==============================================-->
+     
+     <div class="ad_img2">
+        <img src="Pictures/Ad/ad2.jpg">
+        <i class="fa-regular fa-rectangle-xmark" id="ad_icon2"></i>
+    </div>
+
+    <!--============================================== * ad 2 * ==============================================-->
+     
+    <div class="download_app">
+        <div class="download">
+            <img src="Pictures/footer.jpg" class ="img">
+
+            <div class="text">
+                <h1> TRY THE OLX APP </h1>
+                <p> Buy, sell and find just about anything using the app on your mobile. </p>
+            </div>
+            
+            <div class="download_store">
+                <p>GET YOUR APP TODAY</p>
+                <img src="Pictures/play store.png">
+            </div>
+
+        </div>
+
+    </div>
+
+    <!--============================================== * footer * ==============================================-->
+
+    <div class="main_footer">
+        <div class="footer">
+            <div class="footer_box">
+                <h2>POPULAR LOCATIONS</h2>
+                <p>Kolkata</p>
+                <p>Mumbai</p>
+                <p>Chennai</p>
+                 <p>Pune</p>
+            </div>
+            <div class="footer_box">
+                <h2>TRENDING LOCATIONS</h2>
+                <p>Bhubaneswar</p>
+                <p>Hyderabad</p>
+                <p>Chandigarh</p>
+                <p>Nashik</p>
+            </div>
+            <div class="footer_box">
+                <h2>ABOUT US</h2>
+                <p>About OLX Group</p>
+                <p>Careers</p>
+                <p>Contact Us</p>
+                <p>OLX People</p>
+                <p>Waah Jobs</p>
+            </div>
+            <div class="footer_box">
+                <h2>OLX</h2>
+                <p>Help</p>
+                <p>Sitemap</p>
+                <p>Legal & Privacy Information</p>
+                <p>Blog</p>
+                <p>OLX Autos Sell Car</p>
+            </div>
+        </div>
+    </div>
+
+     <script type="text/javascript" src="script.js"></script>
+     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+     <script nomodule="" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
